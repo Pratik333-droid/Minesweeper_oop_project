@@ -1,10 +1,11 @@
 #include <iostream>
-//#include "global.h"
+// #include "global.h"
 #include "Board.h"
 #include "TheGame.h"
-
+// #include "User.h"
 bool Global::flag1 = false;
-
+int Global::glob_board_size = 10;
+int Global::glob_total_mines = 20;
  void  gameTutorial ()
  {
      std::cout <<std::endl<<std::endl<<std::endl<<"                                  -------------------------------------------------GAME TUTORIAL----------------------------------------"<<std::endl<<std::endl;

@@ -7,7 +7,7 @@
 void Board :: boardInitializer (int fxc, int fyc)
 {
     
-    for (int i =0; i<Global::Global::glob_board_size; i++)
+    for (int i =0; i<Global::glob_board_size; i++)
     {
         for (int j = 0; j<Global::glob_board_size; j++)
         {

@@ -1,4 +1,5 @@
 # include "TheGame.h"
+#include "global.h"
 #include <iostream>
 using namespace std;
 
@@ -62,14 +63,14 @@ void TheGame:: playGame (User prashant, Board gameboard)
                     {
                         cout <<"The grid is flagged as bomb. Please unflag it so as to select that grid."<<endl;
                         cout <<"Blocks cleared = "<<blocks_cleared<<endl;
-                        cout <<"Remaining blocks to be cleared = "<<Global::Global::glob_board_size*Global::Global::glob_board_size-Global::glob_total_mines-blocks_cleared<<endl;
+                        cout <<"Remaining blocks to be cleared = "<<Global::glob_board_size*Global::glob_board_size-Global::glob_total_mines-blocks_cleared<<endl;
                         continue;
                     }
                     else if (gameboard.display_board[prashant.xcor][prashant.ycor] != '-')
                     {
                         cout <<"The co-ordinate is already selected. Please enter a new co-ordinate."<<endl;
                         cout <<"Blocks cleared = "<<blocks_cleared<<endl;
-                        cout <<"Remaining blocks to be cleared = "<<Global::Global::glob_board_size*Global::Global::glob_board_size-Global::glob_total_mines-blocks_cleared<<endl;
+                        cout <<"Remaining blocks to be cleared = "<<Global::glob_board_size*Global::glob_board_size-Global::glob_total_mines-blocks_cleared<<endl;
 
                         continue;
                     }
